@@ -26,15 +26,19 @@ int main()
     setlocale(LC_ALL, "Russian");
     SetConsoleCP(1251);
     std::string s;
-    int x=1;
+    
+    int x;
+    Counter count;
     std::cout << "Вы хотите указать начальное значение счётчика? Введите да или нет: ";
     std::cin >> s;
     if (s == "да") 
     { 
         std::cout << "Введите начальное значение счётчика: "; 
-        std::cin >> x;       
+        std::cin >> x;     
+       Counter c(x); //Временный счетчик с параметрами
+       count = c; 
     }   
-    Counter count(x);
+       
     char command;
     do
     {
