@@ -2,7 +2,74 @@
 class Figure
 {
 public:
-    Figure() {};                        // конструктор и методы всех фигур
+    Figure() {};  
+    std::string get_name() { return name; };
+    int get_sides_count() { return sides_count; };
+virtual void print() { };
+protected:
+    int sides_count = 0;
+    std::string name = "Фигура";
+};
+class Triangle : public Figure
+{
+protected: 
+    int a = 10, b = 20, c = 30;
+    int A = 50, B = 60, C = 70;
+    //int a, b, c, d, A, B, C, D;
+public:
+    int get_a() { return a; }
+    int get_b() { return b; }
+    int get_c() { return c; }
+    int get_A() { return A; }
+    int get_B() { return B; }
+    int get_C() { return C; }
+
+    Triangle(int a, int b, int c, int A, int B, int C)
+    {
+        sides_count = 3; name = "Треугольник"; this->a = a; this->b = b; this->c = c; this->A = A; this->B = B; this->C = C;
+    };
+    Triangle() { sides_count = 3; name = "Треугольник"; };
+protected:
+    void print()
+    {
+        std::cout << get_name() << ": " << std::endl;
+        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << std::endl;
+        std::cout << "Углы: А=" << get_A() << " B=" << get_B() << " C=" << get_C() << std::endl;
+        std::cout << std::endl;
+    };   
+};
+class Right_Triangle : public Triangle
+{
+public:
+    Right_Triangle(int a, int b, int c, int A, int B)
+    {
+        name = "Прямоугольный треугольник"; this->a = a; this->b = b; this->c = c; this->A = A; this->B = B; this->C = 90;
+    };
+};
+class Iso_Triangle :public Triangle
+{
+public:
+    Iso_Triangle(int a, int b, int A,int B) 
+    {
+        name = "Равнобедренный треугольник"; this->c = this->a = a; this->b = b; this->C = this->A = A; this->B = B;
+    };
+};
+class Equel_Triangle :public Triangle
+{
+public:
+    Equel_Triangle(int a)
+    {
+        name = "Равносторонний треугольник"; this->b = this->a = this->c = a; this->A = this->B = this->C = 60;
+    };
+};
+   
+class Quadrangle : public Figure
+{
+protected:
+    int a = 10, b = 20, c = 30, d = 40;
+    int A = 50, B = 60, C = 70, D = 80;
+   // int a, b, c, d, A, B, C, D;
+public:
     int get_a() { return a; }
     int get_b() { return b; }
     int get_c() { return c; }
@@ -10,81 +77,88 @@ public:
     int get_A() { return A; }
     int get_B() { return B; }
     int get_C() { return C; }
-    int get_D() { return D; }
-    std::string get_name() { return name; };
-protected:
-   
-    std::string name = "Фигура";
-    int a = 0, b = 0, c = 0, d = 0; // у нулевой фигуры стороны равны нулю
-    int A = 0, B = 0, C = 0, D = 0; // у нулевой фигуры углы равны нулю
-};
-class Triangle : public Figure
-{
-public:                                                     // Разные конструкторы треугольников
-    Triangle(int a, int b, int c, int A, int B, int C)
-    {
-        name = "Треугольник"; this->a = 10; this->b = 20; this->c = 30; this->A = 50; this->B = 60; this->C = 70;
-    };
-    Triangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, C)
-    {
-        name = "Прямоугольный треугольник"; this->C = 90;
-    };
-    Triangle(int a, int b, int A, int B) : Triangle(a, b, c, A, B, C)
-    {
-        name = "Равнобедренный треугольник"; this->c = this->a; this->C = this->A;
-    };
-    Triangle(int a) : Triangle(a, b, c, A, B, C)
-    {
-        name = "Равносторонний треугольник"; this->b = this->c = this->a; this->A = this->B = this->C = 60; 
-    };
-    Triangle() {};
-};
-class Quadrangle : public Figure
-{
-public:                                                                  // Разные конструкторы четырехугольников
+    int get_D() { return D; }  
     Quadrangle(int a, int b, int c, int d, int A, int B, int C, int D)
-    {
-        name = "Четырёхугольник"; this->a = 10; this->b = 20; this->c = 30; this->d = 40; this->A = 50; this->B = 60; this->C = 70; this->D = 80;
+    { 
+        sides_count = 4; name = "Четырёхугольник"; this->a = a; this->b = b; this->c = c; this->d = d; this->A = A; this->B = B; this->C = C; this->D = D;
     };
-    Quadrangle(int a, int b) : Quadrangle(a, b, c, d, A, B, C, D)
+    Quadrangle() { sides_count = 4; name = "Четырёхугольник"; };
+private:
+    void print() 
     {
-        name = "Прямоугольник"; this->c = this->a; this->d = this->b; this->A = this->B = this->C = this->D = 90;
+        std::cout << get_name() << ": " << std::endl;
+        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << " d=" << get_d() << std::endl;
+        std::cout << "Углы: А=" << get_A() << " B=" << get_B() << " C=" << get_C() << " D=" << get_D() << std::endl;    
+        std::cout << std::endl;
     };
-    Quadrangle(int a) : Quadrangle(a, b, c, d, A, B, C, D)
+};
+
+class Parallelogram : public Quadrangle
+{
+public:
+    Parallelogram(int a, int b, int A, int B)
     {
-        name = "Квадрат"; this->b = this->c = this->d = this->a; this->A = this->B = this->C = this->D = 90;
+        name = "Параллелограмм"; this->c = this->a = a; this->d = this->b = b; this->C = this->A = A; this->D = this->B = B;
     };
-    Quadrangle(int a, int b, int A, int B) : Quadrangle(a, b, c, d, A, B, C, D)
+    Parallelogram()
     {
         name = "Параллелограмм"; this->c = this->a; this->d = this->b; this->C = this->A; this->D = this->B;
     };
-    Quadrangle(int a, int A, int B) : Quadrangle(a, b, c, d, A, B, C, D)
+};
+class Rectangle : public Parallelogram
+{
+public:
+    Rectangle(int a, int b) 
     {
-        name = "Ромб"; this->b = this->c = this-> d = this->a; this->C = this->A; this->D = this->B;
+        name = "Прямоугольник"; this->A = this->B = this->C = this->D = 90; this->a = this->c = a; this->b = this->d = b;
+    };  
+};
+class Romb : public Parallelogram
+{
+public:
+    Romb(int a, int A, int B)
+    {
+        name = "Ромб"; this->b = this->a = this->d = this->c = a; this->A = this->C = A; this->B = this->D = B;
     };
-    Quadrangle() {};
+    Romb()
+    {
+        name = "Ромб"; this->b = this->a = this->d = this->c; this->A = this->C; this->B = this->D;
+    };
 };
-void print_info(Figure *f) // вывод на экран разных фигур
-{   
-    std::cout <<f->get_name() << ": " << std::endl;
-    std::cout << "Стороны: a=" << f->get_a() << " b=" << f->get_b() << " c=" << f->get_c(); 
-    if (f->get_d() != 0) { std::cout << " d=" << f->get_d(); }      // если 4-й параметр ненулевой значит прямоугольник
-    std::cout<< std::endl;
-    std::cout << "Углы: А=" << f->get_A() << " B=" << f->get_B() << " C=" << f->get_C();
-    if (f->get_D() != 0) { std::cout << " D=" << f->get_D(); }  // если 4-й параметр ненулевой значит прямоугольник
-    std::cout << std::endl << std::endl;
-    return;
+class Square : public Romb
+{
+public:   
+    Square(int a) 
+    { 
+        name = "Квадрат"; this->A = this->C = this->B = this->D = 90; this->c = this->a = a; this->d = this->b = a; 
+    }
 };
-int main()
+  
+void print_info(Figure* f) 
+{ 
+    f->print(); 
+};
+
+int main()   
 {
     setlocale(LC_ALL, "Russian");
-  
-    Triangle* t = new Triangle[4];  // создаем массив треугольников пустых
-    t[0] = { 1, 2, 3, 4, 5, 6 }; t[1] = { 1, 2, 3, 4, 5 }; t[2] = { 1, 2, 3, 4 }; t[3] = { 1 };  // инициализируем
-    for (int i = 0; i < 4; i++) { print_info(&t[i]); }      //выводим на экран
-    delete[] t;
-    Quadrangle* q = new Quadrangle[5];          // созадем массив прямоугольников пустых
-    q[0] = { 1, 2, 3, 4, 5, 6, 7, 8 }; q[1] = { 1, 2 }; q[2] = { 1 }; q[3] = { 1, 2, 3, 4 }; q[4] = { 1, 2, 3 };  // инициализируем
-    for (int i = 0; i < 5; i++) { print_info(&q[i]); }          // выводим на экран
-    delete[] q;
+   
+    Triangle t(10,20,30,50,60,70);
+    Right_Triangle rt(10,20,30,50,60);
+    Iso_Triangle it(10,20,50,60);
+    Equel_Triangle eq(10);
+    Quadrangle q(10,20,30,40,50,60,70,80);
+    Rectangle r(10,20);
+    Square s(10);
+    Parallelogram p(10,20,50,60);
+    Romb rmb(10,50,60);
+    print_info(&t);
+    print_info(&rt);
+    print_info(&it);
+    print_info(&eq);
+    print_info(&q);
+    print_info(&r);
+    print_info(&s);
+    print_info(&p);
+    print_info(&rmb);
 };
