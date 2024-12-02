@@ -3,8 +3,7 @@ class Figure
 {
 public:
     Figure() {};
-    std::string get_name() { return name; };
-    int get_sides_count() { return sides_count; };
+   
     virtual void print_info()
     {
         std::cout << this->get_name() << ": " << std::endl;
@@ -13,6 +12,8 @@ public:
         std::cout << std::endl;
     };
 protected:
+    std::string get_name() { return name; };
+    int get_sides_count() { return sides_count; };
     int sides_count = 0;
     std::string name = "Фигура";
     virtual bool check()
@@ -227,5 +228,5 @@ int main()
     print_info(&r);
     print_info(&s);
     print_info(&p);
-    print_info(&rmb);
+    print_info(&rmb); 
 };
