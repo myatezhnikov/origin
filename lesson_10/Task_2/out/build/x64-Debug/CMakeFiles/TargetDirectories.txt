@@ -1,0 +1,3 @@
+C:/Users/Stan/Documents/netology/homeworks/Lesson_10/Task_2/out/build/x64-Debug/CMakeFiles/geometry_figures.dir
+C:/Users/Stan/Documents/netology/homeworks/Lesson_10/Task_2/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Stan/Documents/netology/homeworks/Lesson_10/Task_2/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,21 @@
+# ninja log v6
+19	30	7554715714720369	clean	8c45b54705a541e8
+3	293	7554716614900954	CMakeFiles/geometry_figures.dir/main.cpp.obj	1297f384be8bc41a
+246	348	7554712709917961	geometry_figures.exe	c368321b1cf17f54
+7	16	7554718797502628	clean	8c45b54705a541e8
+12	321	7554718809831247	CMakeFiles/geometry_figures.dir/cpp_files/Equel_Triangle.cpp.obj	b5b3e75923ec9c5
+38	323	7554718810042045	CMakeFiles/geometry_figures.dir/cpp_files/Square.cpp.obj	2c78f7d814b3c627
+9	325	7554718809674966	CMakeFiles/geometry_figures.dir/main.cpp.obj	1297f384be8bc41a
+20	28	7554720196600789	clean	8c45b54705a541e8
+12	429	7554720213907165	CMakeFiles/geometry_figures.dir/cpp_files/Equel_Triangle.cpp.obj	b5b3e75923ec9c5
+20	445	7554720213988768	CMakeFiles/geometry_figures.dir/cpp_files/Parallelogram.cpp.obj	85139355c67a773e
+35	450	7554720214135311	CMakeFiles/geometry_figures.dir/cpp_files/Romb.cpp.obj	bd463d897942b876
+28	452	7554720214022299	CMakeFiles/geometry_figures.dir/cpp_files/Rectangle.cpp.obj	81576354d9630ab3
+18	454	7554720213964442	CMakeFiles/geometry_figures.dir/cpp_files/Iso_Triangle.cpp.obj	10ae921e241cc48c
+8	457	7554720213844841	CMakeFiles/geometry_figures.dir/main.cpp.obj	1297f384be8bc41a
+32	458	7554720214097378	CMakeFiles/geometry_figures.dir/cpp_files/Right_Triangle.cpp.obj	b6c24a53666a2751
+24	460	7554720214022299	CMakeFiles/geometry_figures.dir/cpp_files/Quadrangle.cpp.obj	616d8043c9434382
+38	462	7554720214135311	CMakeFiles/geometry_figures.dir/cpp_files/Square.cpp.obj	2c78f7d814b3c627
+15	465	7554720213933781	CMakeFiles/geometry_figures.dir/cpp_files/Figure.cpp.obj	209eb4cf317ce008
+41	484	7554720214180405	CMakeFiles/geometry_figures.dir/cpp_files/Triangle.cpp.obj	15addc8a2a3f6804
+484	600	7554720218633811	geometry_figures.exe	3ec25e6bced96666
