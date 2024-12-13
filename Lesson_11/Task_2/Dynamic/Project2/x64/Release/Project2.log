@@ -1,0 +1,16 @@
+﻿  Dynamic_.cpp
+C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\Project2\Dynamic_.cpp(3,9): warning C4273: Leaver::Leaver: несовместимое связывание dll
+      C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\Project2\Dynamic_.h(13,2):
+      см. предыдущее определение "Leaver::Leaver"
+  
+C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\Project2\Dynamic_.cpp(4,21): warning C4273: Leaver::leave: несовместимое связывание dll
+      C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\Project2\Dynamic_.h(14,14):
+      см. предыдущее определение "Leaver::leave"
+  
+     Создается библиотека C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\x64\Release\Project2.lib и объект C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\x64\Release\Project2.exp
+  Создание кода
+  3 of 87 functions ( 3.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  Project2.vcxproj -> C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_2\Dynamic\x64\Release\Project2.dll

@@ -1,0 +1,10 @@
+^C:\USERS\STAN\DOCUMENTS\NETOLOGY\HOMEWORKS\LESSON_11\TASK_3\OUT\CMAKEFILES\406778395B75713F075CE3E1BDE4FA98\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Lesson_11/Task_3 -BC:/Users/Stan/Documents/netology/homeworks/Lesson_11/Task_3/out --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Stan/Documents/netology/homeworks/Lesson_11/Task_3/out/Project1.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

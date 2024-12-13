@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_3\Dynamic_.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_3\Dynamic_.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Stan\Documents\netology\homeworks\Lesson_11\Task_3\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{3ADAAFC7-A7E4-3988-B700-7B649590042D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0A7C2221-9679-39BA-86F5-A98F46344C29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
