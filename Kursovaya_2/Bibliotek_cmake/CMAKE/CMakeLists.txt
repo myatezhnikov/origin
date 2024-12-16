@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(Racing)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON) 
+add_library(Functions SHARED Functions.h Functions.cpp Air.h Air.cpp All_terrain_boots.h All_terrain_boots.cpp Broom.h Broom.cpp Camel.h Camel.cpp Centaur.h Centaur.cpp Eagle.h Eagle.cpp Ground.h Ground.cpp Magic_Carpet.h Magic_Carpet.cpp Racers.h Racers.cpp Speedy_Camel.h Speedy_Camel.cpp Transport.h Transport.cpp)
+add_executable(racing main.cpp)
+target_link_libraries(racing Functions)
