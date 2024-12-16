@@ -140,4 +140,5 @@ int main()
 		std::cin >> choice;
 				
 	} while (choice != 2);
+	delete[] racers;
 }
