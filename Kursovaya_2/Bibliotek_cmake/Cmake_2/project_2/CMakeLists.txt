@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.22.0)
+project(Racing)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON) 
+
+# Добавление вложенной поддиректории 
+add_subdirectory(app)
+add_subdirectory(lib_func)
+add_subdirectory(lib_racers)
+add_subdirectory(lib1)
+add_subdirectory(lib1.1)
+add_subdirectory(lib1.1.1)
+add_subdirectory(lib1.1.2)
+add_subdirectory(lib1.1.3)
+add_subdirectory(lib1.2)
+add_subdirectory(lib1.2.1)
+add_subdirectory(lib1.2.2)
+add_subdirectory(lib1.2.3)
+add_subdirectory(lib1.2.4)

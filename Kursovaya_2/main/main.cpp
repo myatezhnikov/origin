@@ -55,9 +55,10 @@ int registration_racers(int* type_of_race, int number_transport, int distance, R
 				system("cls"); cout << print_transport(&choice) << " уже зарегистрирован!" << endl;
 			}
 		}
-		else if (number_transport == (size - 1)) //Если все ТС зарегистрированы
+		if (number_transport == (size - 1)) //Если все ТС зарегистрированы
 		{
-			cout << "Все транспортные средства зарегистрированы" << endl << "Нажмите любую клавишу: ";
+			system("cls");
+			cout << "Все транспортные средства зарегистрированы" << endl << "1. Закончить регистрацию" << endl;
 			std::cin >> choice; choice = 0;
 		}
 	} while (choice);
@@ -121,14 +122,14 @@ int main()
 		std::cin >> choice;
 		x = registration_racers(&type_of_race, 0, distance, racers, size);
 		do
-		{
-			system("cls");
-			cout << "1. Зарегистрировать транспорт" << endl;
-			cout << "2. Начать гонку" << endl;
-			cout << "Выберите действие: ";
-			std::cin >> choice;
-			if (choice == 1) { x = registration_racers(&type_of_race, x, distance, racers, size); }
-		} while (choice != 2);
+			{
+				system("cls");	
+				cout << "1. Зарегистрировать транспорт" << endl;
+				cout << "2. Начать гонку" << endl;
+				cout << "Выберите действие: ";
+				std::cin >> choice;
+				if (choice == 1) { x = registration_racers(&type_of_race, x, distance, racers, size); }	
+			} while (choice != 2);
 
 		system("cls");
 		cout << "Результаты гонки:" << endl;

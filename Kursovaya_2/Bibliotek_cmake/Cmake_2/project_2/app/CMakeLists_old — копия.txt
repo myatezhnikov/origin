@@ -1,0 +1,53 @@
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON) 
+# Добавление директории 
+include_directories(
+/lib_func
+/lib_racers
+/lib1
+/lib1.1
+/lib1.1.1
+/lib1.1.2
+/lib1.1.3
+/lib1.2
+/lib1.2.1
+/lib1.2.2
+/lib1.2.3
+/lib1.2.4
+)
+
+
+# Список исходных файлов
+set(PROJECTNAME Racing)
+set(SOURCES 
+main.cpp
+Functions.cpp
+Racers.cpp
+Air.cpp
+All_terrain_boots.cpp
+Broom.cpp
+Camel.cpp
+Centaur.cpp
+Eagle.cpp
+Ground.cpp
+Magic_Carpet.cpp
+Speedy_Camel.cpp
+Transport.cpp
+)
+
+set (HEADERS
+Functions.h 
+Air.h
+All_terrain_boots.h
+Broom.h 
+Camel.h 
+Centaur.h 
+Eagle.h 
+Ground.h 
+Magic_Carpet.h 
+Racers.h 
+Speedy_Camel.h 
+Transport.h
+)
+
+add_executable(${PROJECTNAME} ${SOURCES})
+

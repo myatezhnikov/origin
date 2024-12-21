@@ -1,0 +1,15 @@
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/app/CMakeFiles/Racing.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/CMakeFiles/Functions.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_racers/CMakeFiles/Racers.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1/CMakeFiles/Transport.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.1/CMakeFiles/Air.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.1.1/CMakeFiles/Broom.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.1.2/CMakeFiles/Eagle.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.1.3/CMakeFiles/Magic_Carpet.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.2/CMakeFiles/Ground.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.2.1/CMakeFiles/All_terrain_boots.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.2.2/CMakeFiles/Camel.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.2.3/CMakeFiles/Centaur.dir
+C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib1.2.4/CMakeFiles/Speedy_Camel.dir

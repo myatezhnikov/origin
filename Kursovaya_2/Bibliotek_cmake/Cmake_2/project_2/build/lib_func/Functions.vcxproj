@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2CDA4B7-6678-39F4-AEFF-D942A446E3C6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Functions</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Functions.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Functions.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Functions.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Functions.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug";Functions_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";Functions_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Debug/exports.def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\lib1.2.1\Debug\All_terrain_boots.lib;..\lib1.1.1\Debug\Broom.lib;..\lib1.2.2\Debug\Camel.lib;..\lib1.2.3\Debug\Centaur.lib;..\lib1.1.2\Debug\Eagle.lib;..\lib1.1.3\Debug\Magic_Carpet.lib;..\lib1.2.4\Debug\Speedy_Camel.lib;..\lib_racers\Debug\Racers.lib;..\lib1.1\Debug\Air.lib;..\lib1.2\Debug\Ground.lib;..\lib1\Debug\Transport.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Debug/Functions.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Debug/Functions.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";Functions_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";Functions_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Release/exports.def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\lib1.2.1\Release\All_terrain_boots.lib;..\lib1.1.1\Release\Broom.lib;..\lib1.2.2\Release\Camel.lib;..\lib1.2.3\Release\Centaur.lib;..\lib1.1.2\Release\Eagle.lib;..\lib1.1.3\Release\Magic_Carpet.lib;..\lib1.2.4\Release\Speedy_Camel.lib;..\lib_racers\Release\Racers.lib;..\lib1.1\Release\Air.lib;..\lib1.2\Release\Ground.lib;..\lib1\Release\Transport.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Release/Functions.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Release/Functions.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";Functions_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";Functions_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/MinSizeRel/exports.def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\lib1.2.1\MinSizeRel\All_terrain_boots.lib;..\lib1.1.1\MinSizeRel\Broom.lib;..\lib1.2.2\MinSizeRel\Camel.lib;..\lib1.2.3\MinSizeRel\Centaur.lib;..\lib1.1.2\MinSizeRel\Eagle.lib;..\lib1.1.3\MinSizeRel\Magic_Carpet.lib;..\lib1.2.4\MinSizeRel\Speedy_Camel.lib;..\lib_racers\MinSizeRel\Racers.lib;..\lib1.1\MinSizeRel\Air.lib;..\lib1.2\MinSizeRel\Ground.lib;..\lib1\MinSizeRel\Transport.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/MinSizeRel/Functions.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/MinSizeRel/Functions.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";Functions_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";Functions_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_racers;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1;C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E __create_def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/RelWithDebInfo/exports.def C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>..\lib1.2.1\RelWithDebInfo\All_terrain_boots.lib;..\lib1.1.1\RelWithDebInfo\Broom.lib;..\lib1.2.2\RelWithDebInfo\Camel.lib;..\lib1.2.3\RelWithDebInfo\Centaur.lib;..\lib1.1.2\RelWithDebInfo\Eagle.lib;..\lib1.1.3\RelWithDebInfo\Magic_Carpet.lib;..\lib1.2.4\RelWithDebInfo\Speedy_Camel.lib;..\lib_racers\RelWithDebInfo\Racers.lib;..\lib1.1\RelWithDebInfo\Air.lib;..\lib1.2\RelWithDebInfo\Ground.lib;..\lib1\RelWithDebInfo\Transport.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/RelWithDebInfo/Functions.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/Functions.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/RelWithDebInfo/Functions.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_func\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/lib_func/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2 -BC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build --check-stamp-file C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/lib_func/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2 -BC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build --check-stamp-file C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/lib_func/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2 -BC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build --check-stamp-file C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/lib_func/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2 -BC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build --check-stamp-file C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/lib_func/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_func\Functions.cpp" />
+    <ClInclude Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib_func\Functions.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\ZERO_CHECK.vcxproj">
+      <Project>{F410033A-F0DF-3F43-94DF-3A8638B970EC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1\Air.vcxproj">
+      <Project>{E6B85F71-182F-3B77-8D28-4739FB84BA7C}</Project>
+      <Name>Air</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.1\All_terrain_boots.vcxproj">
+      <Project>{DCAADC3F-E780-36E8-AA26-87631213D6EA}</Project>
+      <Name>All_terrain_boots</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.1\Broom.vcxproj">
+      <Project>{C192F2F1-5039-3352-9537-E26948C8804A}</Project>
+      <Name>Broom</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.2\Camel.vcxproj">
+      <Project>{375F1E8E-FC84-310F-A161-F7CD7618D9B3}</Project>
+      <Name>Camel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.3\Centaur.vcxproj">
+      <Project>{3E03DDDB-7B21-3F95-88FD-D62707EE673B}</Project>
+      <Name>Centaur</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.2\Eagle.vcxproj">
+      <Project>{DEFB6B9F-5615-303C-8BFB-194B8AEF692E}</Project>
+      <Name>Eagle</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2\Ground.vcxproj">
+      <Project>{9142E49F-3A07-3F7E-9BCB-06307B8E5963}</Project>
+      <Name>Ground</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.3\Magic_Carpet.vcxproj">
+      <Project>{960C3420-66A6-3FF9-B85C-C3E90FA590E5}</Project>
+      <Name>Magic_Carpet</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_racers\Racers.vcxproj">
+      <Project>{0188DA4E-5C51-3399-8DBB-279C6F7C06EE}</Project>
+      <Name>Racers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.4\Speedy_Camel.vcxproj">
+      <Project>{FF8F121D-7E47-3CAA-9F8A-B541D15B80D2}</Project>
+      <Name>Speedy_Camel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1\Transport.vcxproj">
+      <Project>{6D2CC8C9-0014-366E-89CD-4E2616A9DA33}</Project>
+      <Name>Transport</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

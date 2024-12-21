@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\app\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB8A2F62-CD1B-338C-A30D-0B551EF88AF9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

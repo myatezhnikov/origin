@@ -1,0 +1,10 @@
+^C:\USERS\STAN\DOCUMENTS\NETOLOGY\HOMEWORKS\KURSOVAYA_2\BIBLIOTEK_CMAKE\CMAKE_2\PROJECT_2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2 -BC:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build --check-stamp-file C:/Users/Stan/Documents/netology/homeworks/Kursovaya_2/Bibliotek_cmake/Cmake_2/project_2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

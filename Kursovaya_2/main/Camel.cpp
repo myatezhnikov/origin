@@ -18,9 +18,11 @@ double Camel::travel_time(int distance) //ѕервый раз: 5 ¬се последующие разы : 8
 {
 	double x{ 0 }, t{ 0 };
 	t = distance / get_Speed(); // врем€ в пути
-	x = static_cast<int>(t / get_time_before_rest()); // количество остановок в пути
+	x = t / get_time_before_rest(); // количество остановок в пути
+	if (x == (int)x) { x = x - 1; } //ѕровер€ем, если последн€€ остановка выпадает на финиш, то уменьшаем кол-во реальных остановок на 1
+	x = static_cast<int>(x);
 	if (x < 1) { return t; }
 	if (x == 1) { return t + 5; }
-	else if (x > 1) { return (t + 8 * x); }
+	else if (x > 1) { return (t + 5 + 8 * (x-1)); }
 	else return 0;
 }

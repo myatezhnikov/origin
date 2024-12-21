@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1\Debug\Transport.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1\Debug\Air.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2\Debug\Ground.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.1\Debug\All_terrain_boots.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.1\Debug\Broom.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.2\Debug\Camel.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.3\Debug\Centaur.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.2\Debug\Eagle.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.1.3\Debug\Magic_Carpet.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_racers\Debug\Racers.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib1.2.4\Debug\Speedy_Camel.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\lib_func\Debug\Functions.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\build\app\Debug\Racing.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1.1\Air.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1.1\Air.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Stan\Documents\netology\homeworks\Kursovaya_2\Bibliotek_cmake\Cmake_2\project_2\lib1.1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D8DCA7EA-9061-3A07-9DA5-9A457E722371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BB8A2F62-CD1B-338C-A30D-0B551EF88AF9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
