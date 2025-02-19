@@ -16,16 +16,20 @@ public:
 		{ 
 			arr[logical_size] = index_element;	//добавляем элемент в массив
 			logical_size++;					//увеличивем логический размер после добавления элемента
-		}
-		else { std::cout << "Выход за пределы массива" << std::endl; }
+		} else 
+			{ 
+				std::cout << "Выход за пределы массива" << std::endl; 
+			}
 	}
 	int get_element(size_t index_element)		//считываем элемент проверяя не выход за диапазон
 	{ 
 		if (this->actual_size > index_element) 
 		{ 
 			return arr[index_element]; 
-		}
-		else { throw std::out_of_range("Выход за пределы массива"); }
+		} else 
+			{ 
+				throw std::out_of_range("Выход за пределы массива"); 
+			}
 	}
 	
 	~smart_array()	//деструктор
