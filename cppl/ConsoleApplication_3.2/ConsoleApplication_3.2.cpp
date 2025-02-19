@@ -3,21 +3,28 @@ class smart_array
 {
 public:
 	int* arr = nullptr;
-	int i{ 0 };		//логический размер массива, счетчик
-	int size{ 0 };	//размер массива
-	smart_array(int size)		//конструктор с размером массива
+	int logical_size{ 0 };		//логический размер массива, счетчик
+	int actual_size{ 0 };	//реальный размер массива
+	smart_array(size_t actual_size)		//конструктор с размером массива
 	{
-		this->size = size;
-		arr = new int[size];
+		this->actual_size = actual_size;
+		arr = new int[actual_size];
 	}
-	void add_element(int elem)		//добавляем элемент проверяя не выход за диапазон
+	void add_element(size_t index_element)		//добавляем элемент проверяя не выход за диапазон
 	{
-		if (this->size > i) { arr[i] = elem; i++; }
+		if (this->actual_size > logical_size) //если логический размер массива позволяет добавить новый элеменет
+		{
+			arr[logical_size] = index_element;	//добавляем элемент в массив
+			logical_size++;					//увеличивем логический размер после добавления элемента
+		}
 		else { std::cout << "Выход за пределы массива" << std::endl; }
 	}
-	int get_element(int elem)		//считываем элемент проверяя не выход за диапазон
+	int get_element(size_t index_element)		//считываем элемент проверяя не выход за диапазон
 	{
-		if ((this->size > elem) && (elem >= 0)) { return arr[elem]; }
+		if (this->actual_size > index_element)
+		{
+			return arr[index_element];
+		}
 		else { throw std::out_of_range("Выход за пределы массива"); }
 	}
 
@@ -28,22 +35,22 @@ public:
 	smart_array& operator=(smart_array& new_array)	//перегрузка оператора "="
 	{
 		delete[] arr;		//удаляем массив слева от "="
-		this->size = new_array.size; //новые значения размера и индекса (логического размера массива)
-		this->i = new_array.i;
-		arr = new int[this->size]; //создаем новый массив 
+		this->actual_size = new_array.actual_size; //новые значения реального размера и логического размера массива
+		this->logical_size = new_array.logical_size;
+		arr = new int[this->actual_size]; //создаем новый массив 
 		
-		for (int k = 0; k < this->size; k++)
+		for (int i = 0; i < this->actual_size; i++)
 		{
-			arr[k] = new_array.get_element(k);      //копируем в него массив справа от "="
+			arr[i] = new_array.get_element(i);      //копируем в него массив справа от "="
 		}		
 		return *this;			//возвращаем скопированный массив
 	}
 	void print()			//функция вывода на экран массива
 	{
 		std::cout << "Адрес массива = " << &arr << std::endl;	
-		for (int k = 0; k < i; k++)  // вывод на экран массива логического, а не фактического размера
+		for (int i = 0; i < logical_size; i++)  // вывод на экран массива логического, а не фактического размера
 		{
-			std::cout << "Элемент " << k << " = " << get_element(k) << std::endl;
+			std::cout << "Элемент " << i << " = " << get_element(i) << std::endl;
 		}
 	}
 };

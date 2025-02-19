@@ -3,21 +3,28 @@ class smart_array
 {
 public:
 	int* arr = nullptr;
-	int i{ 0 };		//логический размер массива, счетчик
-	int size{ 0 };	//размер массива
-	smart_array(int size)		//конструктор с размером массива
+	int logical_size{ 0 };		//логический размер массива, счетчик
+	int actual_size{ 0 };	//реальный размер массива
+	smart_array(size_t actual_size)		//конструктор с размером массива
 	{
-		this->size = size;
-		arr = new int[size];
+		this->actual_size = actual_size;
+		arr = new int[actual_size];
 	}
-	void add_element(int elem)		//добавляем элемент проверяя не выход за диапазон
+	void add_element(size_t index_element)		//добавляем элемент проверяя не выход за диапазон
 	{
-		if (this->size > i) { arr[i] = elem; i++;	}
+		if (this->actual_size > logical_size) //если логический размер массива позволяет добавить новый элеменет
+		{ 
+			arr[logical_size] = index_element;	//добавляем элемент в массив
+			logical_size++;					//увеличивем логический размер после добавления элемента
+		}
 		else { std::cout << "Выход за пределы массива" << std::endl; }
 	}
-	int get_element(int elem)		//считываем элемент проверяя не выход за диапазон
+	int get_element(size_t index_element)		//считываем элемент проверяя не выход за диапазон
 	{ 
-		if ((this->size > elem) && (elem >= 0)) { return arr[elem]; }
+		if (this->actual_size > index_element) 
+		{ 
+			return arr[index_element]; 
+		}
 		else { throw std::out_of_range("Выход за пределы массива"); }
 	}
 	
