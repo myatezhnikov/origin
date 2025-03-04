@@ -7,10 +7,10 @@ T square(T &x)
 {
     return x * x;
 }
-template<>                //специализация шаблона для вектора
-std::vector<int> square(std::vector<int> &array)
+template<typename T>                //специализация шаблона для вектора
+std::vector<T> square(std::vector<T> &array)
 {
-    std::vector<int> temp_array; //временный вектор
+    std::vector<T> temp_array; //временный вектор
     for (auto var : array)
     {
         temp_array.push_back(var * var); //записываем новое значение
