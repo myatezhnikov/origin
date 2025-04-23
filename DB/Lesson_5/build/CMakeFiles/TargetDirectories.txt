@@ -1,0 +1,3 @@
+C:/Users/Stan/Documents/netology/homeworks/DB/Lesson_5/build/CMakeFiles/MyProject.dir
+C:/Users/Stan/Documents/netology/homeworks/DB/Lesson_5/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Stan/Documents/netology/homeworks/DB/Lesson_5/build/CMakeFiles/ZERO_CHECK.dir

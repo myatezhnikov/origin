@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Stan\Documents\netology\homeworks\DB\Lesson_5\build\CMakeFiles\6e1a08b928e74e027652b307fc7f870d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{59F185E6-9EBB-3256-B620-D9FDFE19B420}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
